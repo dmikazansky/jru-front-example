@@ -223,8 +223,19 @@ function createAccount() {
             }),
             success: function () {
                 req(getUrl(pageNum));
+                setForm()
             }
         })
     }
+}
+
+function setForm() {
+   $("#cName").val("");
+   $("#cTitle").val("");
+   $("#cRace").val("");
+   $("#cProf").val("");
+   $("#cLvl").val("");
+   $("#cDate").val("");
+   $("#cBanned").val("");
 }
 
