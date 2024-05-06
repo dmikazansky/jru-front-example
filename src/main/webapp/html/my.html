@@ -2,7 +2,6 @@
 <html data-bs-theme="dark">
 <head>
     <title>RPG</title>
-    <script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -46,261 +45,98 @@
         </table>
     </div>
 
-    <div id="button_div" class="btn-group" role="group">
-    </div>
-    <div class="container">
-        <div id="createForm">
-            <h2>Create new account:</h2>
-            <form id="createAcc">
-                <div id="cName" class="mb-3">
-                    <label for="cName" class="form-label">Name:</label>
-                    <input id="name" name="name" class="form-control form-control-sm" type="text">
-                </div>
-                <div id="cTitle" class="mb-3">
-                    <label for="cTitle" class="form-label">Title:</label>
-                    <input id="title" name="title" class="form-control form-control-sm" type="text">
-                </div>
-                <div id="cRace" class="mb-3">
-                    <label for="cRace" class="form-label">Race:</label>
-                    <select id="race" name="race" class="form-select form-select-sm" aria-label=".form-select-sm пример">
-                        <option value="HUMAN">HUMAN</option>
-                        <option value="DWARF">DWARF</option>
-                        <option value="ELF">ELF</option>
-                        <option value="GIANT">GIANT</option>
-                        <option value="ORC">ORC</option>
-                        <option value="TROLL">TROLL</option>
-                        <option value="HOBBIT">HOBBIT</option>
-                    </select>
-                </div>
-                <div id="cProf" class="mb-3">
-                    <label for="cProf" class="form-label">Profession:</label>
-                    <select id="prof" name="prof" class="form-select form-select-sm" aria-label=".form-select-sm пример">
-                        <option value="WARRIOR">WARRIOR</option>
-                        <option value="ROGUE">ROGUE</option>
-                        <option value="SORCERER">SORCERER</option>
-                        <option value="CLERIC">CLERIC</option>
-                        <option value="PALADIN">PALADIN</option>
-                        <option value="NAZGUL">NAZGUL</option>
-                        <option value="WARLOCK">WARLOCK</option>
-                        <option value="DRUID">DRUID</option>
-                    </select>
-                </div>
-                <div id="cLvl" class="mb-3">
-                    <label for="cLvl" class="form-label">Level:</label>
-                    <input id="lvl" name="lvl" class="form-control form-control-sm" type="text">
-                </div>
-                <div id="cDate" class="mb-3">
-                    <p>
-                        <label for="cDate" class="form-label">Birthday:</label>
-                        <input id="date" name="date" class="form-control form-control-sm"  type="date" id="date" name="date"/>
-                    </p>
-                </div>
-                <div id="cBanned" class="mb-3">
-                    <label for="cBanned" class="form-label">Banned:</label>
-                    <select id="ban" name="ban" class="form-select form-select-sm" aria-label=".form-select-sm пример">
-                        <option value="true">true</option>
-                        <option value="false">false</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary" onclick="createAccount()">Save</button>
-            </form>
+    <div class="row">
+        <div class="col-md-4">
+            <div id="button_div" class="btn-group" role="group">
+            </div>
         </div>
     </div>
+
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="border">
+                    <div class="createForm">
+                        <div class="container text-center">
+                            <h2>Create new account:</h2>
+                        </div>
+                        <br>
+                        <label for="cName" class="form-label">Name:</label>
+                        <input id="cName" name="name" class="form-control form-control-sm" type="text">
+
+                        <br>
+
+                        <label for="cTitle" class="form-label">Title:</label>
+                        <input id="cTitle" name="title" class="form-control form-control-sm" type="text">
+
+                        <br>
+
+                        <label for="cRace" class="form-label">Race:</label>
+                        <select id="cRace" name="race" class="form-select form-select-sm"
+                                aria-label=".form-select-sm пример">
+                            <option value="HUMAN">HUMAN</option>
+                            <option value="DWARF">DWARF</option>
+                            <option value="ELF">ELF</option>
+                            <option value="GIANT">GIANT</option>
+                            <option value="ORC">ORC</option>
+                            <option value="TROLL">TROLL</option>
+                            <option value="HOBBIT">HOBBIT</option>
+                        </select>
+
+                        <br>
+
+                        <label for="cProf" class="form-label">Profession:</label>
+                        <select id="cProf" name="prof" class="form-select form-select-sm"
+                                aria-label=".form-select-sm пример">
+                            <option value="WARRIOR">WARRIOR</option>
+                            <option value="ROGUE">ROGUE</option>
+                            <option value="SORCERER">SORCERER</option>
+                            <option value="CLERIC">CLERIC</option>
+                            <option value="PALADIN">PALADIN</option>
+                            <option value="NAZGUL">NAZGUL</option>
+                            <option value="WARLOCK">WARLOCK</option>
+                            <option value="DRUID">DRUID</option>
+                        </select>
+
+                        <br>
+
+                        <label for="cLvl" class="form-label">Level:</label>
+                        <input id="cLvl" name="lvl" class="form-control form-control-sm" type="text">
+
+                        <br>
+
+                        <p>
+                            <label for="cDate" class="form-label">Birthday:</label>
+                            <input class="form-control form-control-sm" id="cDate" name="date" type="date"/>
+                        </p>
+
+                        <br>
+
+                        <label for="cBanned" class="form-label">Banned:</label>
+                        <select id="cBanned" name="ban" class="form-select form-select-sm"
+                                aria-label=".form-select-sm пример">
+                            <option value="true">true</option>
+                            <option value="false">false</option>
+                        </select>
+
+                        <br>
+
+                        <button id="saveFormBut" type="submit" class="btn btn-primary" onclick="createAccount()">Save
+                        </button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
-<script>
-    let pageNum = 0;
-    function req(url) {
-        fetch(url).then(data => data.json()).then(data => buildTable(data))
-    }
-
-    function buildTable(data) {
-        let table = document.getElementById("myTable");
-        table.innerHTML = '';
-        for (let i = 0; i < data.length; i++) {
-            let row = `<tr id="tableRow_" + i>
-                                <td>${data[i].id}</td>
-                                <td id="name_${data[i].id}">${data[i].name}</td>
-                                <td id="title_${data[i].id}">${data[i].title}</td>
-                                <td id="race_${data[i].id}">${data[i].race}</td>
-                                <td id="prof_${data[i].id}">${data[i].profession}</td>
-                                <td>${data[i].level}</td>
-                                <td>${data[i].birthday}</td>
-                                <td id="ban_${data[i].id}">${data[i].banned}</td>
-                                <td><button id="editButton_${data[i].id}" type="button" class="btn btn-outline-secondary" onclick="edit(${data[i].id})">
-                                <i id="pen_${data[i].id}" class="bi bi-pen"></i></button></td>
-                                <td><button id="deleteButton_${data[i].id}"  type="button" class="btn btn-outline-secondary" onclick="deleteAccount(${data[i].id})">
-                                <i class="bi bi-trash"></i></button></td>
-                            </tr>`
-            table.innerHTML += row;
-        }
-        deleteButtons()
-        createButton()
-    }
-    function edit(id) {
-        let thisTr= document.getElementById("tableRow_" + id);
-        let deleteBut = document.getElementById("deleteButton_" + id);
-        let editBut = document.getElementById("editButton_" + id);
-        let butt = document.getElementById("pen_" +id);
-        let tdName = document.getElementById("name_" + id);
-        let tdTitle = document.getElementById("title_" + id);
-        let tdTRace = document.getElementById("race_" + id);
-        let tdProf = document.getElementById("prof_" + id);
-        let tdBan = document.getElementById("ban_" + id);
-        let raceCur = tdTRace.innerText;
-        let profCur = tdProf.innerText;
-        let banCur = tdBan.innerText;
-
-        tdName.innerHTML = `<input id='input_name_${id}'type='text' value= '${tdName.innerHTML}'>`;
-        tdTitle.innerHTML = `<input id='input_title_${id}'type='text' value= '${tdTitle.innerHTML}'>`;
-
-
-
-        changeRace(tdTRace, id);
-        changeProf(tdProf, id);
-        changeBanned(tdBan, id);
-        currentRace(raceCur, id);
-        currentProf(profCur, id);
-        currentBan(banCur, id);
-
-        deleteBut.remove();
-        butt.removeAttribute("class");
-        butt.setAttribute("class", "bi bi-save")
-        editBut.removeAttribute("onclick");
-        editBut.setAttribute("onclick", `saveChanges(${id})`)
-    }
-
-    function currentRace(raceCur, id) {
-        document.querySelector("#select_race_" + id).value = raceCur;
-    }
-    function currentProf(profCur, id) {
-        document.querySelector("#select_prof_" + id).value = profCur;
-    }
-    function currentBan(banCur, id) {
-        document.querySelector("#select_ban_" + id).value = banCur;
-    }
-
-    function changeRace(tdRace, id) {
-        tdRace.innerHTML = `<select id="select_race_${id}" class="form-select" aria-label="Default select example">
-            <option value="HUMAN">HUMAN</option>
-            <option value="DWARF">DWARF</option>
-            <option value="ELF">ELF</option>
-            <option value="GIANT">GIANT</option>
-            <option value="ORC">ORC</option>
-            <option value="TROLL">TROLL</option>
-            <option value="HOBBIT">HOBBIT</option>
-        </select>`
-    }
-    function changeProf(tdProf, id) {
-        tdProf.innerHTML = `<select id="select_prof_${id}" class="form-select" aria-label="Default select example">
-            <option value="WARRIOR">WARRIOR</option>
-            <option value="ROGUE">ROGUE</option>
-            <option value="SORCERER">SORCERER</option>
-            <option value="CLERIC">CLERIC</option>
-            <option value="PALADIN">PALADIN</option>
-            <option value="NAZGUL">NAZGUL</option>
-            <option value="WARLOCK">WARLOCK</option>
-            <option value="DRUID">DRUID</option>
-        </select>`
-    }
-    function changeBanned(tdBan, id) {
-        tdBan.innerHTML = `<select id="select_ban_${id}" class="form-select" aria-label="Default select example">
-            <option value="true">true</option>
-            <option value="false">false</option>
-        </select>`
-    }
-    function saveChanges(id) {
-        let name = $("#input_name_" + id).val();
-        let title = $("#input_title_" + id).val();
-        let race = $("#select_race_" + id).val();
-        let profession = $("#select_prof_" + id).val();
-        let banned = $("#select_ban_" + id).val();
-
-        $.ajax({
-            url: "rest/players/" + id,
-            type: "POST",
-            dataType: "json",
-            contentType: "application/json;charset=UTF-8",
-            data: JSON.stringify({
-                "name": name,
-                "title": title,
-                "race": race,
-                "profession": profession,
-                "banned": banned
-            }),
-            success: function () {
-                req(getUrl(pageNum));
-            }
-        })
-    }
-    saveChanges(1)
-    function deleteButtons() {
-        let butt = document.getElementById("button_div");
-        butt.innerHTML = ``;
-    }
-
-    function getCount() {
-        let url = "rest/players/count";
-        let count = 0;
-        $.ajax({
-            url: url,
-            async: false,
-            success: function (result) {
-                count = parseInt(result)
-            }
-        })
-        return count;
-    }
-
-    function getButtonCount() {
-        const count = getCount();
-        const countPerPage = $("#count_1").val();
-        const total = Math.ceil(count / parseInt(countPerPage))
-        return total
-    }
-
-    function getUrl(i) {
-        let url = "rest/players?pageSize=" + $("#count_1").val() + "&pageNumber=" + (i);
-        return url;
-    }
-
-    function createButton() {
-        const body = document.querySelector("body");
-        const contForButt = document.getElementById("button_div")
-
-        for (let i = 1; i <= getButtonCount(); i++) {
-            const button = document.createElement("button");
-            button.setAttribute("id", "button" + i)
-            button.setAttribute("type", "submit")
-            button.setAttribute("class", "btn btn-outline-secondary")
-            button.addEventListener("click", () => {
-                setPageNum(i)
-                const url = getUrl(pageNum);
-                req(url);
-            })
-            contForButt.append(button);
-            button.innerText = `${i}`;
-        }
-    }
-
-    function deleteAccount(id) {
-        let url = "rest/players/" + id;
-        $.ajax({
-            url: url,
-            type: 'DELETE',
-            success: function() {
-                req(getUrl(pageNum));
-            }
-        });
-    }
-    function setPageNum(num) {
-        pageNum = num - 1;
-    }
-    function createAccount() {
-        let formData = new FormData(document.getElementById("createAcc"));
-
-    }
-
-</script>
+<script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
+<script src="/js/my.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
